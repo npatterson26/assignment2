@@ -14,5 +14,8 @@
         <input type="submit" value="login"/>
         <input type="hidden" name="next" value="{{ next }}"/>
     </form>
-    <p><a href="{% url 'password_reset' %}">Forgotten your password?</a></p>
+    <p><a href="{% url 'password_reset' %}" class="btn btn-primary">Forgotten your password?</a></p>
+    <br>
+    <a href="{% url 'crm:register' %}" class="btn btn-primary">Or you can register ;)</a>
+
 {% endblock %}
